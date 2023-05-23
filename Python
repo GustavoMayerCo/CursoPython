@@ -1,1 +1,28 @@
 
+#calculo do IMC 
+
+nome = input("Digite seu nome: ")
+peso = int(input("Digite o seu peso em kg: "))
+altura = float(input("Digite a sua altura: "))
+
+imc = peso / (altura*altura)
+
+if imc < 16:
+	print(f"{nome} você está com Magreza grave e o seu imc é: {imc:.2f}")
+elif imc < 17:
+	print(f"{nome} você está com Magreza moderada e o seu imc é: {imc:.2f}")
+elif imc < 18.5:
+	print(f"{nome} você está com Magreza leve e o seu imc é: {imc:.2f}")
+elif imc < 25:
+	print(f"{nome} você está Saudável e o seu imc é: {imc:.2f}")
+elif imc < 30:
+	print(f"{nome} você está com Sobrepeso e o seu imc é: {imc:.2f}")
+elif imc < 35:
+	print(f"{nome} você está com Obesidade Grau I e o seu imc é: {imc:.2f}")
+elif imc < 40:
+	print(f"{nome} você está com Obesidade Grau II (severa) e o seu imc é: {imc:.2f}")
+else:
+	print(f"{nome} você está com Obesidade Grau III (mórbida) e o seu imc é: {imc:.2f}")
+
+#print (f"{nome} o seu IMC é de: {imc:.2f}")
+
