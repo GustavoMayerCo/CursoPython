@@ -1,0 +1,18 @@
+# Import pandas está importando uma biblioteca atribuindo o apelido "pd" para facilitar o uso posterior dos seus recursos.
+import pandas as pd 
+#data é um dicionário e em python dicionario é onde armazena palavras-chave, para você usar depois caso queira 
+data = { 
+    
+    'nome' : ['-','Gustavo', 'Maria', 'Leo'],
+    'Idade' : ['-', '20', '56', '13'],
+    'Cidade' : ['-','Paris', 'Canela', 'NY'],
+    'Curso' : ['-', 'ADS', 'Letras', 'Gastronomia'],
+    'Semestre' : ['-', '2/6', '7/8', '2/6']
+}
+#df é para facilitar o print, pd.(pandas).DataFrame = montar uma tabela com os dados que tem no (data)
+df = pd.DataFrame(data)
+# Se deixar só df ele cria uma tabela de verdade 
+df
+
+df.to_excel("teste.xlsx", index=False)
+# Cria uma planilha igual a do excel 
