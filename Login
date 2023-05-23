@@ -1,0 +1,28 @@
+#Acesso de login 
+
+usuario = input('Digite o seu Usuário: ')
+senha = int(input('Digite sua senha: '))
+
+perfil_leo = 'Seja bem vindo, Leonardo '
+perfil_ane = 'Seja bem vinda, Ane '
+perfil_gustavo = 'Seja bem vindo, Gustavo '
+
+#Usando and no if -> a condicao so vai ser avaliada se tudo for true 
+
+if usuario == 'Gustavo' and senha == 12345: 
+  print(perfil_gustavo)
+
+elif usuario == 'Leonardo' and senha == 131324: 
+  print(perfil_leo)
+
+elif usuario == 'Ane' and senha == 2406: 
+  print(perfil_ane)
+
+else:
+  print('Usuário não encontrado, tente novamente')
+
+
+
+
+
+  
